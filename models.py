@@ -143,10 +143,10 @@ class DCDiscriminator(nn.Module):
 #        self.conv2 = conv(4, 8, 4)
 #        self.conv3 = conv(8, 16, 4)
 #        self.conv4 = conv(16, 1 , 4)
-         self.conv1 = conv(32, 16, 4)
-         self.conv2 = conv(16, 8, 4)
-         self.conv3 = conv(8, 4, 4)
-         self.conv4 = conv(4, 1 , 4)
+         self.conv1 = conv(3, 32, 4)
+         self.conv2 = conv(32, 16, 4)
+         self.conv3 = conv(16, 8, 4)
+         self.conv4 = conv(8, 4, 4)
     def forward(self, x):
 
         out = F.relu(self.conv1(x))
